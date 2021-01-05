@@ -13,6 +13,16 @@ h2{
     margin-bottom: 20px;
 }
 
+.error{
+    color: red;
+    font-size: medium;
+}
+
+.info{
+    font-size: large;
+    margin: 20px;
+}
+
 form{
     display: grid;
     grid-template-columns: auto;

@@ -8,5 +8,17 @@
 </head>
 <body>
     <h2>Уровень 2</h2>
+    <p class="info">
+        sdfsfasdffds
+    </p>
+    <p class="error">
+        {% if  error %}
+            Error: {{error}}
+        {% endif  %}
+    </p>
+    <form action="/lvl3" method="POST" autocomplete="off">
+        <input type="text" name="code" placeholder="Введи код">
+        <input type="submit" value="Далее">
+    </form>
 </body>
 </html>
