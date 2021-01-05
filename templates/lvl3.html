@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-    <title>Уровень 3</title>
+    <title>Уровень 2</title>
 </head>
 <body>
-    <h2>Уровень 3</h2>
+    <h2>Уровень 2</h2>
+    <p class="info">
+        sdfsfasdffds
+    </p>
+    <p class="error">
+        {% if  error %}
+            {{error}}
+        {% endif  %}
+    </p>
+    <form action="/lvl3" method="POST" autocomplete="off">
+        <input type="text" name="code" placeholder="Введи код">
+        <input type="submit" value="Далее">
+    </form>
 </body>
 </html>
