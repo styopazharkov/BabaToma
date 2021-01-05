@@ -144,7 +144,7 @@ def lvl7():
         return redirect(url_for('index'))
     try:
         code = request.form['code']
-        if code == ANSWER2:
+        if code == ANSWER6:
             session['lvl'] = 7
         else:
             session['error'] = ERROR_MESSAGE
