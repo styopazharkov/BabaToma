@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'this is the index page'
+    return render_template('index.html')
 
 @app.route('/lvl1', methods=['POST'])
 def lvl1():
