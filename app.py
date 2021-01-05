@@ -13,6 +13,9 @@ def lvl1():
 def lvl2():
     return render_template('lvl2.html')
 
+@app.route('/lvl3', methods=['POST'])
+def lvl3():
+    return render_template('lvl3.html')
 
 if __name__ == "__main__":
     app.run(debug = True) 
