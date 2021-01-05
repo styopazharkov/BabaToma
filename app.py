@@ -11,7 +11,11 @@ def lvl1():
 
 @app.route('/lvl2', methods=['POST'])
 def lvl2():
-    return render_template('lvl2.html')
+    code = request.form['code']
+    if code == "1":
+        return render_template('lvl2.html')
+    else:
+        return lvl1()
 
 @app.route('/lvl3', methods=['POST'])
 def lvl3():
