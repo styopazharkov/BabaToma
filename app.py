@@ -4,7 +4,7 @@ app = Flask(__name__)
 app.secret_key = "An arbitrary key"
 
 ANSWER1 = '1'
-ANSWER2 = 'ЧерныйКот'
+ANSWER2 = "ЧерныйКот"
 ANSWER3 = '1'
 ANSWER4 = '1'
 ANSWER5 = '1'
