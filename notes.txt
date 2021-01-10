@@ -2,6 +2,7 @@ Crossword
 Brightness
 Song
 Google Maps
+    -53.09921095106288, 73.5143158825672
 Wikipedia
 YouTube
 Buttons

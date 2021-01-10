@@ -10,8 +10,9 @@
 <body>
     <h2>Уровень 2</h2>
     <p class="info">
-        sdfsfasdffds
+        Загрузи эту картинку на телефон и поиграй с яркостью:
     </p>
+    <img src="{{ url_for('static', filename='/img/black.png')}}" style="width:200px;" alt="black">
     <p class="error">
         {% if  error %}
             {{error}}

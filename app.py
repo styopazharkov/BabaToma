@@ -4,9 +4,9 @@ app = Flask(__name__)
 app.secret_key = "An arbitrary key"
 
 ANSWER1 = '1'
-ANSWER2 = "ЧерныйКот"
+ANSWER2 = "черныйкот"
 ANSWER3 = '1'
-ANSWER4 = '1'
+ANSWER4 = 'мосон пик'
 ANSWER5 = '1'
 ANSWER6 = '1'
 ANSWER7 = '1'
@@ -34,7 +34,7 @@ def lvl2():
         return redirect(url_for('index'))
     try:
         code = request.form['code']
-        if code == ANSWER1:
+        if code.lower().strip() == ANSWER1:
             session['lvl'] = 2
         else:
             session['error'] = ERROR_MESSAGE
@@ -56,7 +56,7 @@ def lvl3():
         return redirect(url_for('index'))
     try:
         code = request.form['code']
-        if code == ANSWER2:
+        if code.lower().strip() == ANSWER2:
             session['lvl'] = 3
         else:
             session['error'] = ERROR_MESSAGE
@@ -78,7 +78,7 @@ def lvl4():
         return redirect(url_for('index'))
     try:
         code = request.form['code']
-        if code == ANSWER3:
+        if code.lower().strip() == ANSWER3:
             session['lvl'] = 4
         else:
             session['error'] = ERROR_MESSAGE
@@ -100,7 +100,7 @@ def lvl5():
         return redirect(url_for('index'))
     try:
         code = request.form['code']
-        if code == ANSWER4:
+        if code.lower().strip() == ANSWER4:
             session['lvl'] = 5
         else:
             session['error'] = ERROR_MESSAGE
@@ -122,7 +122,7 @@ def lvl6():
         return redirect(url_for('index'))
     try:
         code = request.form['code']
-        if code == ANSWER5:
+        if code.lower().strip() == ANSWER5:
             session['lvl'] = 6
         else:
             session['error'] = ERROR_MESSAGE
@@ -144,7 +144,7 @@ def lvl7():
         return redirect(url_for('index'))
     try:
         code = request.form['code']
-        if code == ANSWER6:
+        if code.lower().strip() == ANSWER6:
             session['lvl'] = 7
         else:
             session['error'] = ERROR_MESSAGE
@@ -166,7 +166,7 @@ def lvl8():
         return redirect(url_for('index'))
     try:
         code = request.form['code']
-        if code == ANSWER7:
+        if code.lower().strip() == ANSWER7:
             session['lvl'] = 8
         else:
             session['error'] = ERROR_MESSAGE
@@ -188,7 +188,7 @@ def lvl9():
         return redirect(url_for('index'))
     try:
         code = request.form['code']
-        if code == ANSWER8:
+        if code.lower().strip() == ANSWER8:
             session['lvl'] = 9
         else:
             session['error'] = ERROR_MESSAGE
@@ -210,7 +210,7 @@ def lvl10():
         return redirect(url_for('index'))
     try:
         code = request.form['code']
-        if code == ANSWER9:
+        if code.lower().strip() == ANSWER9:
             session['lvl'] = 10
         else:
             session['error'] = ERROR_MESSAGE
@@ -232,7 +232,7 @@ def finish():
         return redirect(url_for('index'))
     try:
         code = request.form['code']
-        if code == ANSWER10:
+        if code.lower().strip() == ANSWER10:
             session['lvl'] = 11
         else:
             session['error'] = ERROR_MESSAGE
