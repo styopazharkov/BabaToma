@@ -3,16 +3,16 @@ app = Flask(__name__)
 
 app.secret_key = "An arbitrary key"
 
-ANSWER1 = '1'
-ANSWER2 = "черныйкот"
-ANSWER3 = '1'
+ANSWER1 = 'поднос'
+ANSWER2 = 'кошка'
+ANSWER3 = 'гангста-рэп'
 ANSWER4 = 'мосон пик'
-ANSWER5 = '1'
-ANSWER6 = '1'
-ANSWER7 = '1'
-ANSWER8 = '1'
-ANSWER9 = '1'
-ANSWER10 = '1'
+ANSWER5 = 'жожо'
+ANSWER6 = 'спичка'
+ANSWER7 = 'великобритания'
+ANSWER8 = 'ура'
+ANSWER9 = 'ананас'
+ANSWER10 = '123456'
 ERROR_MESSAGE = "Неверный Код!"
 
 @app.route('/')

@@ -5,7 +5,10 @@
     font-size: x-large;
     text-align: center;
 }
-
+.hiddenlink{
+    text-decoration: none;
+    color: black;
+}
 
 
 h2{
@@ -39,4 +42,32 @@ input{
     height: 40px;
     border-radius: 5px;
     border: black 1px solid;
+}
+
+.hint{
+    height: auto;
+    width: 100%;
+}
+
+.grid23{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 700px;
+    margin: auto;
+}
+
+.hint p{
+    visibility: hidden;
+}
+
+.hint:hover p{
+    visibility: visible;
+}
+
+.start{
+    margin-top: 50px;
+}
+
+.start:hover {
+    background-color: gray;
 }
